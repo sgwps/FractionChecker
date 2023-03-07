@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>@ViewData["fraction"]</p>
+</div>
+<form action="/get_input" method="post">
+    <label for='@ViewData["item_1"]'>@ViewData["item_1"]</label>
+    <input name='@ViewData["item_1"]' type="text"> </input>
+    <label for='@ViewData["item_2"]'>@ViewData["item_2"]</label>
+    <input name='@ViewData["item_2"]' type="text"> </input>
+    <label for='@ViewData["item_3"]'>@ViewData["item_3"]</label>
+    <input name='@ViewData["item_3"]' type="text"> </input>
+    <label for='@ViewData["item_4"]'>@ViewData["item_4"]</label>
+    <input name='@ViewData["item_4"]' type="text"> </input>
+    <label for='@ViewData["item_5"]'>@ViewData["item_5"]</label>
+    <input name='@ViewData["item_5"]' type="text"> </input>
+    <input type="submit" value="Submit"> </input>
+</form>
